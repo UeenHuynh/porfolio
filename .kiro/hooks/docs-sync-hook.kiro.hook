@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "name": "Documentation Sync",
+  "description": "Listens to configuration files and documentation changes to keep README and docs folder synchronized with source modifications",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      ".kiro/settings/*.json",
+      ".kiro/steering/*.md",
+      "*.md",
+      "*.db"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Source files have been modified in this MCP configuration project. Please review the changes and update the documentation accordingly. If there's a README file, update it to reflect any configuration changes, new features, or setup modifications. If there's a /docs folder, update the relevant documentation there as well. Focus on keeping the documentation accurate and helpful for users setting up MCP servers and API integrations."
+  }
+}

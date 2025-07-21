@@ -1,0 +1,62 @@
+{
+  "mcpServers": {
+    "fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"],
+      "env": {},
+      "disabled": false,
+      "autoApprove": ["fetch"]
+    },
+    "google-search": {
+      "command": "uvx",
+      "args": ["@modelcontextprotocol/server-google-maps"],
+      "env": {
+        "GOOGLE_MAPS_API_KEY": "YOUR_GOOGLE_MAPS_API_KEY_HERE"
+      },
+      "disabled": true,
+      "autoApprove": ["search_places", "get_place_details"]
+    },
+    "github": {
+      "command": "uvx",
+      "args": ["@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_TOKEN_HERE"
+      },
+      "disabled": true,
+      "autoApprove": [
+        "search_repositories",
+        "get_file_contents",
+        "create_issue"
+      ]
+    },
+    "slack": {
+      "command": "uvx",
+      "args": ["@modelcontextprotocol/server-slack"],
+      "env": {
+        "SLACK_BOT_TOKEN": "YOUR_SLACK_BOT_TOKEN_HERE"
+      },
+      "disabled": true,
+      "autoApprove": ["list_channels", "send_message", "get_channel_history"]
+    },
+    "everart": {
+      "command": "uvx",
+      "args": ["@modelcontextprotocol/server-everart"],
+      "env": {
+        "EVERART_API_KEY": "YOUR_EVERART_API_KEY_HERE"
+      },
+      "disabled": true,
+      "autoApprove": ["generate_image", "get_image_status"]
+    },
+    "aws-kb": {
+      "command": "uvx",
+      "args": ["@modelcontextprotocol/server-aws-kb"],
+      "env": {
+        "AWS_ACCESS_KEY_ID": "YOUR_AWS_ACCESS_KEY_HERE",
+        "AWS_SECRET_ACCESS_KEY": "YOUR_AWS_SECRET_KEY_HERE",
+        "AWS_REGION": "us-east-1"
+      },
+      "disabled": true,
+      "autoApprove": ["query_knowledge_base", "retrieve_documents"]
+    }
+  }
+}
