@@ -5,32 +5,11 @@ After deploying to Vercel, the website shows only unstyled HTML content without 
 
 ## ✅ Fixes Applied
 
-### 1. **Fixed Vercel Configuration (`vercel.json`)**
-- Removed conflicting `builds` and `routes` properties
-- Added explicit `Content-Type` headers for CSS files
-- Ensured proper MIME type handling for static assets
-
-```json
-{
-  "version": 2,
-  "name": "uyen-portfolio",
-  "headers": [
-    {
-      "source": "/assets/css/(.*)",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/css; charset=utf-8"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    }
-  ]
-}
-```
+### 1. **Simplified Vercel Configuration**
+- **REMOVED** `vercel.json` completely to let Vercel auto-detect static site
+- **REMOVED** problematic build script from `package.json`
+- **ADDED** `.vercelignore` to exclude unnecessary files
+- Let Vercel handle static file serving automatically
 
 ### 2. **Enhanced HTML CSS Reference**
 - Updated CSS link to be more explicit: `./assets/css/style.css`

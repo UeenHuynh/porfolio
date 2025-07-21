@@ -1,0 +1,25 @@
+# Documentation files
+README.md
+DEPLOYMENT_GUIDE.md
+CSS_LOADING_FIX.md
+API_KEYS_GUIDE.md
+CUSTOMIZATION_GUIDE.md
+GITHUB_LINKS_UPDATE.md
+HOOKS_README.md
+IMAGE_SUGGESTIONS.md
+WORK_EXPERIENCE_DETAILS.md
+
+# Test files
+css-test.html
+*-test.html
+
+# Development files
+.gitignore
+database.db
+
+# MCP demo file (not needed for portfolio)
+mcp-demo.html
+
+# Duplicate CV file in root
+AIO-UyenHuynhCV.pdf
+MinhUyen.jpg
