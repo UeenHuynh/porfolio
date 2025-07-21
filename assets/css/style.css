@@ -2068,6 +2068,13 @@ section {
   font-size: var(--text-base);
 }
 
+.experience-advisor {
+  color: var(--text-secondary);
+  font-style: italic;
+  font-size: var(--text-sm);
+  margin-top: var(--space-1);
+}
+
 .experience-meta {
   display: flex;
   flex-direction: column;
