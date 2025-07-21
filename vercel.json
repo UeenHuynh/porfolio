@@ -53,10 +53,5 @@
         }
       ]
     }
-  ],
-  "functions": {
-    "index.html": {
-      "includeFiles": "assets/**"
-    }
-  }
+  ]
 }
