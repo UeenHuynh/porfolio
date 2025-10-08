@@ -13,7 +13,7 @@
       "env": {
         "GOOGLE_MAPS_API_KEY": "YOUR_GOOGLE_MAPS_API_KEY_HERE"
       },
-      "disabled": true,
+      "disabled": false,
       "autoApprove": ["search_places", "get_place_details"]
     },
     "github": {
