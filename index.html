@@ -1,1510 +1,1178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Uyen Huynh Khoi Minh - Biotechnology Student & AI Enthusiast. Portfolio showcasing AI integration in biotechnology research and projects."
-    />
-    <meta
-      name="keywords"
-      content="Uyen Huynh, Biotechnology, AI, Machine Learning, Deep Learning, Portfolio, Vietnam"
-    />
-    <meta name="author" content="Uyen Huynh Khoi Minh" />
-    <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph Meta Tags -->
-    <meta
-      property="og:title"
-      content="Uyen Huynh Khoi Minh - Biotechnology & AI Portfolio"
-    />
-    <meta
-      property="og:description"
-      content="Biotechnology Student & AI Enthusiast specializing in AI integration for biotechnology research"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="assets/images/uyen-profile.jpg" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Uyen Huynh Khoi Minh - Biotechnology Student & AI Enthusiast. Portfolio showcasing AI integration in biotechnology research and projects." />
+  <meta name="keywords" content="Uyen Huynh, Biotechnology, AI, Machine Learning, Deep Learning, Portfolio, Vietnam" />
+  <meta name="author" content="Uyen Huynh Khoi Minh" />
+  <meta name="robots" content="index, follow" />
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Uyen Huynh Khoi Minh - Biotechnology & AI Portfolio"
-    />
-    <meta
-      name="twitter:description"
-      content="Biotechnology Student & AI Enthusiast specializing in AI integration for biotechnology research"
-    />
-    <meta name="twitter:image" content="assets/images/uyen-profile.jpg" />
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Uyen Huynh Khoi Minh - Biotechnology & AI Portfolio" />
+  <meta property="og:description"
+    content="Biotechnology Student & AI Enthusiast specializing in AI integration for biotechnology research" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="assets/images/uyen-profile.jpg" />
 
-    <title>Uyen Huynh Khoi Minh - Biotechnology & AI Portfolio</title>
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Uyen Huynh Khoi Minh - Biotechnology & AI Portfolio" />
+  <meta name="twitter:description"
+    content="Biotechnology Student & AI Enthusiast specializing in AI integration for biotechnology research" />
+  <meta name="twitter:image" content="assets/images/uyen-profile.jpg" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="assets/images/b80908e2f3a07afe23b1.jpg" />
+  <title>Uyen Huynh Khoi Minh - Biotechnology & AI Portfolio</title>
 
-    <!-- Preconnect to external resources -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/b80908e2f3a07afe23b1.jpg" />
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
-  </head>
-  <body>
-    <!-- Skip to main content link for accessibility -->
-    <a href="#main-content" class="skip-link" aria-label="Skip to main content"
-      >Skip to main content</a
-    >
+  <!-- Preconnect to external resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Header Section -->
-    <header class="header-area" role="banner">
-      <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="container">
-          <div class="logo">
-            <a href="#home" aria-label="Uyen Huynh - Home">UyenHuynh</a>
-          </div>
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="./assets/css/dark-theme.css" type="text/css" />
+</head>
 
-          <ul class="nav-menu" role="menubar">
-            <li role="none">
-              <a
-                href="#home"
-                role="menuitem"
-                aria-label="Navigate to Home section"
-                >Home</a
-              >
-            </li>
-            <li role="none">
-              <a
-                href="#about"
-                role="menuitem"
-                aria-label="Navigate to About section"
-                >About</a
-              >
-            </li>
-            <li role="none">
-              <a
-                href="#skills"
-                role="menuitem"
-                aria-label="Navigate to Skills section"
-                >Skills</a
-              >
-            </li>
-            <li role="none">
-              <a
-                href="#projects"
-                role="menuitem"
-                aria-label="Navigate to Projects section"
-                >Projects</a
-              >
-            </li>
-            <li role="none">
-              <a
-                href="#experience"
-                role="menuitem"
-                aria-label="Navigate to Experience section"
-                >Experience</a
-              >
-            </li>
-            <li role="none">
-              <a
-                href="#contact"
-                role="menuitem"
-                aria-label="Navigate to Contact section"
-                >Contact</a
-              >
-            </li>
-          </ul>
+<body>
+  <!-- Code Matrix Background -->
+  <canvas id="codeMatrix" class="code-matrix-bg"></canvas>
 
-          <div class="nav-controls">
-            <button
-              type="button"
-              class="theme-toggle"
-              aria-label="Toggle between light and dark theme"
-              aria-pressed="false"
-            >
-              <span class="theme-icon" aria-hidden="true">🌙</span>
-            </button>
-            <button
-              type="button"
-              class="mobile-menu-toggle"
-              aria-label="Toggle mobile navigation menu"
-              aria-expanded="false"
-            >
-              <span class="hamburger-line" aria-hidden="true"></span>
-              <span class="hamburger-line" aria-hidden="true"></span>
-              <span class="hamburger-line" aria-hidden="true"></span>
-            </button>
-          </div>
+  <!-- Gradient Background Orbs -->
+  <div class="gradient-bg">
+    <div class="gradient-orb emerald"></div>
+    <div class="gradient-orb blue"></div>
+  </div>
+
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link" aria-label="Skip to main content">Skip to main content</a>
+
+  <!-- Header Section -->
+  <header class="header-area" role="banner">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <div class="logo">
+          <a href="#home" aria-label="Uyen Huynh - Home">UyenHuynh</a>
         </div>
-      </nav>
-    </header>
 
-    <!-- Main Content -->
-    <main id="main-content" role="main">
-      <!-- Hero Section -->
-      <section id="home" class="hero-section" role="banner">
-        <div class="container">
-          <div class="hero-content">
-            <div class="hero-text">
-              <h1 class="hero-title">
-                <span class="greeting">Hello, I'm</span>
-                <span class="name">Uyen Huynh Khoi Minh</span>
-              </h1>
-              <h2 class="hero-subtitle">
-                Biotechnology Student & AI Enthusiast
-              </h2>
-              <p class="hero-description">
-                Integrating AI into Biotechnology for innovative research
-                solutions
-              </p>
+        <ul class="nav-menu" role="menubar">
+          <li role="none">
+            <a href="#home" role="menuitem" aria-label="Navigate to Home section">Home</a>
+          </li>
+          <li role="none">
+            <a href="#about" role="menuitem" aria-label="Navigate to About section">About</a>
+          </li>
+          <li role="none">
+            <a href="#skills" role="menuitem" aria-label="Navigate to Skills section">Skills</a>
+          </li>
+          <li role="none">
+            <a href="#projects" role="menuitem" aria-label="Navigate to Projects section">Projects</a>
+          </li>
+          <li role="none">
+            <a href="#experience" role="menuitem" aria-label="Navigate to Experience section">Experience</a>
+          </li>
+          <li role="none">
+            <a href="#contact" role="menuitem" aria-label="Navigate to Contact section">Contact</a>
+          </li>
+        </ul>
 
-              <div class="hero-contact-info">
-                <div class="contact-item">
-                  <span class="contact-label">Email:</span>
-                  <a
-                    href="mailto:uyenhuynhkhoiminh.1.1@gmail.com"
-                    class="contact-link"
-                    aria-label="Send email to Uyen"
-                  >
-                    uyenhuynhkhoiminh.1.1@gmail.com
-                  </a>
-                </div>
-                <div class="contact-item">
-                  <span class="contact-label">Phone:</span>
-                  <a
-                    href="tel:+84397849278"
-                    class="contact-link"
-                    aria-label="Call Uyen"
-                  >
-                    +84 397 849 278
-                  </a>
-                </div>
-                <div class="contact-item">
-                  <span class="contact-label">Location:</span>
-                  <span class="contact-text">Ho Chi Minh City, Vietnam</span>
-                </div>
-              </div>
+        <div class="nav-controls">
+          <button type="button" class="theme-toggle" aria-label="Toggle between light and dark theme"
+            aria-pressed="false">
+            <span class="theme-icon" aria-hidden="true">🌙</span>
+          </button>
+          <button type="button" class="mobile-menu-toggle" aria-label="Toggle mobile navigation menu"
+            aria-expanded="false">
+            <span class="hamburger-line" aria-hidden="true"></span>
+            <span class="hamburger-line" aria-hidden="true"></span>
+            <span class="hamburger-line" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-              <div class="hero-actions">
-                <a
-                  href="#contact"
-                  class="btn btn-primary"
-                  aria-label="Contact Uyen"
-                  >Contact Me</a
-                >
-                <a
-                  href="assets/files/UyenHuynhCV__Copy_.pdf"
-                  class="btn btn-secondary"
-                  download
-                  aria-label="Download Uyen's CV"
-                >
-                  Download CV
+  <!-- Main Content -->
+  <main id="main-content" role="main">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section" role="banner">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="greeting">Hello, I'm</span>
+              <span class="name">Uyen Huynh Khoi Minh</span>
+            </h1>
+            <h2 class="hero-subtitle">
+              MLOps Engineer & AI Engineer
+            </h2>
+            <p class="hero-description">
+              Integrating AI into Biotechnology for innovative research
+              solutions
+            </p>
+
+            <div class="hero-contact-info">
+              <div class="contact-item">
+                <span class="contact-label">Email:</span>
+                <a href="mailto:uyenhuynhkhoiminh.1.1@gmail.com" class="contact-link" aria-label="Send email to Uyen">
+                  uyenhuynhkhoiminh.1.1@gmail.com
                 </a>
               </div>
+              <div class="contact-item">
+                <span class="contact-label">Phone:</span>
+                <a href="tel:+84397849278" class="contact-link" aria-label="Call Uyen">
+                  +84 397 849 278
+                </a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Location:</span>
+                <span class="contact-text">Ho Chi Minh City, Vietnam</span>
+              </div>
             </div>
 
-            <div class="hero-image">
-              <img
-                src="assets/images/b80908e2f3a07afe23b1.jpg"
-                alt="Uyen Huynh Khoi Minh - Professional portrait"
-                class="profile-image"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section
-        id="about"
-        class="about-section"
-        role="region"
-        aria-labelledby="about-heading"
-      >
-        <div class="container">
-          <h2 id="about-heading" class="section-title">About Me</h2>
-          <div class="about-content">
-            <div class="about-grid">
-              <div class="about-main">
-                <div class="about-text">
-                  <h3>Educational Background & Objectives</h3>
-                  <p>
-                    I am currently pursuing my degree in Biotech Engineering at
-                    the University of Agriculture and Forestry Ho Chi Minh City,
-                    with an expected graduation in 2025. My academic journey
-                    focuses on integrating artificial intelligence with
-                    biotechnology to create innovative research solutions.
-                  </p>
-
-                  <div class="about-highlight">
-                    <p>
-                      My passion lies in bridging the gap between traditional
-                      biotechnology and cutting-edge AI technologies, creating
-                      solutions that can revolutionize healthcare, agriculture,
-                      and environmental sustainability.
-                    </p>
-                  </div>
-
-                  <div class="about-stats">
-                    <div class="stat-item">
-                      <span class="stat-number">2025</span>
-                      <span class="stat-label">Expected Graduation</span>
-                    </div>
-                    <div class="stat-item">
-                      <span class="stat-number">4</span>
-                      <span class="stat-label">Languages</span>
-                    </div>
-                    <div class="stat-item">
-                      <span class="stat-number">9+</span>
-                      <span class="stat-label">Major Projects</span>
-                    </div>
-                    <div class="stat-item">
-                      <span class="stat-number">2+</span>
-                      <span class="stat-label">Years Experience</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="about-sidebar">
-                <div class="info-card">
-                  <h4>Education</h4>
-                  <div class="education-item">
-                    <div class="education-title">Biotech Engineer</div>
-                    <div class="education-institution">
-                      University of Agriculture and Forestry Ho Chi Minh City
-                    </div>
-                    <div class="education-year">Expected 2025</div>
-                  </div>
-                </div>
-
-                <div class="info-card">
-                  <h4>Professional Memberships</h4>
-                  <div class="membership-item">
-                    <div class="membership-badge"></div>
-                    <div class="membership-text">AIVIETNAM</div>
-                    <div class="membership-period">2023 - current</div>
-                  </div>
-                </div>
-
-                <div class="info-card">
-                  <h4>Language Skills</h4>
-                  <div class="language-item">
-                    <div class="language-header">
-                      <span class="language-name">Vietnamese</span>
-                      <span class="language-level">Native</span>
-                    </div>
-                    <div class="language-progress">
-                      <div class="language-progress-bar native"></div>
-                    </div>
-                  </div>
-                  <div class="language-item">
-                    <div class="language-header">
-                      <span class="language-name">English</span>
-                      <span class="language-level">TOEIC 700+</span>
-                    </div>
-                    <div class="language-progress">
-                      <div class="language-progress-bar advanced"></div>
-                    </div>
-                  </div>
-                  <div class="language-item">
-                    <div class="language-header">
-                      <span class="language-name">French</span>
-                      <span class="language-level">B2 Level</span>
-                    </div>
-                    <div class="language-progress">
-                      <div class="language-progress-bar intermediate"></div>
-                    </div>
-                  </div>
-                  <div class="language-item">
-                    <div class="language-header">
-                      <span class="language-name">Chinese</span>
-                      <span class="language-level">HSK 3</span>
-                    </div>
-                    <div class="language-progress">
-                      <div class="language-progress-bar intermediate"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary" aria-label="Contact Uyen">Contact Me</a>
+              <a href="assets/files/UyenHuynhCV__Copy_.pdf" class="btn btn-secondary" download
+                aria-label="Download Uyen's CV">
+                Download CV
+              </a>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- Skills Section -->
-      <section
-        id="skills"
-        class="skills-section"
-        role="region"
-        aria-labelledby="skills-heading"
-      >
-        <div class="container">
-          <h2 id="skills-heading" class="section-title">
-            Skills & Competencies
-          </h2>
-          <div class="skills-content">
-            <div class="skills-intro">
-              <p>
-                My expertise spans across biotechnology, artificial
-                intelligence, and programming, enabling me to bridge traditional
-                biological sciences with cutting-edge computational methods.
-              </p>
-            </div>
-
-            <div class="skills-grid">
-              <!-- Programming Skills -->
-              <div class="skill-category">
-                <div class="skill-category-header">
-                  <h3>Programming Languages</h3>
-                  <span class="skill-category-icon">💻</span>
-                </div>
-                <div class="skill-items">
-                  <div class="skill-item" data-skill="python">
-                    <div class="skill-info">
-                      <span class="skill-name">Python</span>
-                      <span class="skill-level">Advanced</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-width="90"></div>
-                    </div>
-                    <div class="skill-description">
-                      Data analysis, ML/DL frameworks, scientific computing
-                    </div>
-                  </div>
-                  <div class="skill-item" data-skill="html">
-                    <div class="skill-info">
-                      <span class="skill-name">HTML/CSS</span>
-                      <span class="skill-level">Intermediate</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-width="75"></div>
-                    </div>
-                    <div class="skill-description">
-                      Responsive web design, modern CSS techniques
-                    </div>
-                  </div>
-                  <div class="skill-item" data-skill="javascript">
-                    <div class="skill-info">
-                      <span class="skill-name">JavaScript</span>
-                      <span class="skill-level">Intermediate</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-width="70"></div>
-                    </div>
-                    <div class="skill-description">
-                      Interactive web applications, data visualization
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- AI/ML Skills -->
-              <div class="skill-category">
-                <div class="skill-category-header">
-                  <h3>AI & Machine Learning</h3>
-                  <span class="skill-category-icon">🤖</span>
-                </div>
-                <div class="skill-items">
-                  <div class="skill-item" data-skill="ml">
-                    <div class="skill-info">
-                      <span class="skill-name">Machine Learning</span>
-                      <span class="skill-level">Advanced</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-width="85"></div>
-                    </div>
-                    <div class="skill-description">
-                      Supervised/unsupervised learning, ensemble methods
-                    </div>
-                  </div>
-                  <div class="skill-item" data-skill="dl">
-                    <div class="skill-info">
-                      <span class="skill-name">Deep Learning</span>
-                      <span class="skill-level">Advanced</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-width="88"></div>
-                    </div>
-                    <div class="skill-description">
-                      Neural networks, CNNs, RNNs, transformer models
-                    </div>
-                  </div>
-                  <div class="skill-item" data-skill="nlp">
-                    <div class="skill-info">
-                      <span class="skill-name"
-                        >Natural Language Processing</span
-                      >
-                      <span class="skill-level">Intermediate</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-width="75"></div>
-                    </div>
-                    <div class="skill-description">
-                      Text analysis, language models, sentiment analysis
-                    </div>
-                  </div>
-                  <div class="skill-item" data-skill="data-analysis">
-                    <div class="skill-info">
-                      <span class="skill-name">Data Analysis</span>
-                      <span class="skill-level">Advanced</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-width="90"></div>
-                    </div>
-                    <div class="skill-description">
-                      Statistical analysis, data visualization, pattern
-                      recognition
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Biotechnology Skills -->
-              <div class="skill-category">
-                <div class="skill-category-header">
-                  <h3>Biotechnology</h3>
-                  <span class="skill-category-icon">🧬</span>
-                </div>
-                <div class="skill-items">
-                  <div class="skill-item" data-skill="microbiology">
-                    <div class="skill-info">
-                      <span class="skill-name">Food Microbiology</span>
-                      <span class="skill-level">Advanced</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-width="85"></div>
-                    </div>
-                    <div class="skill-description">
-                      Microbial analysis, food safety, quality control
-                    </div>
-                  </div>
-                  <div class="skill-item" data-skill="genetic-engineering">
-                    <div class="skill-info">
-                      <span class="skill-name">Genetic Engineering</span>
-                      <span class="skill-level">Intermediate</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-width="70"></div>
-                    </div>
-                    <div class="skill-description">
-                      CRISPR/Cas9, gene editing, molecular cloning
-                    </div>
-                  </div>
-                  <div class="skill-item" data-skill="drug-discovery">
-                    <div class="skill-info">
-                      <span class="skill-name">Drug Discovery</span>
-                      <span class="skill-level">Intermediate</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-width="75"></div>
-                    </div>
-                    <div class="skill-description">
-                      Computational drug design, DILI prediction
-                    </div>
-                  </div>
-                  <div class="skill-item" data-skill="research">
-                    <div class="skill-info">
-                      <span class="skill-name">Research Methods</span>
-                      <span class="skill-level">Advanced</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-width="88"></div>
-                    </div>
-                    <div class="skill-description">
-                      Experimental design, data interpretation, scientific
-                      writing
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Tools & Technologies -->
-              <div class="skill-category">
-                <div class="skill-category-header">
-                  <h3>Tools & Technologies</h3>
-                  <span class="skill-category-icon">🛠️</span>
-                </div>
-                <div class="skill-items">
-                  <div class="skill-item" data-skill="frameworks">
-                    <div class="skill-info">
-                      <span class="skill-name">ML Frameworks</span>
-                      <span class="skill-level">Advanced</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-width="85"></div>
-                    </div>
-                    <div class="skill-description">
-                      TensorFlow, PyTorch, Scikit-learn, Pandas
-                    </div>
-                  </div>
-                  <div class="skill-item" data-skill="databases">
-                    <div class="skill-info">
-                      <span class="skill-name">Databases</span>
-                      <span class="skill-level">Intermediate</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-width="70"></div>
-                    </div>
-                    <div class="skill-description">
-                      SQL, NoSQL, data management
-                    </div>
-                  </div>
-                  <div class="skill-item" data-skill="version-control">
-                    <div class="skill-info">
-                      <span class="skill-name">Version Control</span>
-                      <span class="skill-level">Intermediate</span>
-                    </div>
-                    <div class="skill-bar">
-                      <div class="skill-progress" data-width="75"></div>
-                    </div>
-                    <div class="skill-description">
-                      Git, GitHub, collaborative development
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Projects Section -->
-      <section
-        id="projects"
-        class="projects-section"
-        role="region"
-        aria-labelledby="projects-heading"
-      >
-        <div class="container">
-          <h2 id="projects-heading" class="section-title">
-            Projects & Research
-          </h2>
-          <div class="projects-content">
-            <div class="projects-intro">
-              <p>
-                Explore my portfolio of research projects that demonstrate the
-                integration of AI and biotechnology, showcasing innovative
-                solutions for healthcare, agriculture, and scientific discovery.
-              </p>
-            </div>
-
-            <div class="projects-filter">
-              <button type="button" class="filter-btn active" data-filter="all">
-                All Projects
-              </button>
-              <button type="button" class="filter-btn" data-filter="ai-ml">AI & ML</button>
-              <button type="button" class="filter-btn" data-filter="biotech">
-                Biotechnology
-              </button>
-              <button type="button" class="filter-btn" data-filter="web-dev">
-                Web Development
-              </button>
-            </div>
-
-            <div class="projects-grid">
-              <!-- Breast Project -->
-              <div class="project-card" data-category="ai-ml biotech">
-                <div class="project-image">
-                  <img
-                    src="assets/images/Sélection_375.png"
-                    alt="TOWARDS PROACTIVE BREAST CANCER SCREENING: AN AI-BASED Classification MODEL"
-                    loading="lazy"
-                  />
-                  <div class="project-overlay">
-                    <div class="project-links">
-                      <a
-                        href="https://github.com/UeenHuynh/BreastMammo.git"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link"
-                        aria-label="View BreastCNNs on GitHub"
-                      >
-                        <span class="link-icon">🔗</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="project-info">
-                  <h3 class="project-title">BreastCNNs</h3>
-                  <p class="project-description">
-                    This project proposes an AI-based classification model for proactive breast cancer screening using mammography images. The research focuses on developing and comparing deep learning models, enhanced by an advanced data processing pipeline to improve performance. To ensure clinical trust and transparency, the model integrates Grad-CAM to visualize the key evidence driving its diagnostic decisions.
-                  </p>
-                  <div class="project-tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Deep Learning</span>
-                    <span class="tech-tag">Breast</span>
-                    <span class="tech-tag">AI medical</span>
-                    <span class="tech-tag">Mammography</span>
-                  </div>
-                  <div class="project-metrics">
-                    <div class="metric">
-                      <span class="metric-label">Focus</span>
-                      <span class="metric-value">Lesions Classification</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Capybara Project -->
-              <div class="project-card" data-category="ai-ml biotech">
-                <div class="project-image">
-                  <img
-                    src="assets/images/cute-capybara-tangerine-head-cartoon-isolated-style-vector-illustration-cartoon-illustration-capybara-380265934.webp"
-                    alt="CAPYBARA: Cách Mạng Hệ Sinh Thái Học Tập Cộng Đồng"
-                    loading="lazy"
-                  />
-                  <div class="project-overlay">
-                    <div class="project-links">
-                      <a
-                        href="assets/files/Capybara - Personalized education.docx - Google Docs.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link"
-                        aria-label="View Capybara on GitHub"
-                      >
-                        <span class="link-icon">🔗</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="project-info">
-                  <h3 class="project-title">Capybara</h3>
-                  <p class="project-description">
-                    Capybara is an AI-powered community learning ecosystem designed to revolutionize language education by moving beyond superficial learning. Its core pedagogical approach is "learning by teaching" (The Feynman Technique), transforming passive users into confident teachers within a peer-to-peer framework. The platform leverages advanced AI for semantic analysis, personalized learning paths, and in-depth feedback to create a more effective and engaging educational experience than traditional apps.
-                  </p>
-                  <div class="project-tech">
-                    <span class="tech-tag">Product</span>
-                    <span class="tech-tag">Full Stack</span>
-                    <span class="tech-tag">AI agent</span>
-                  </div>
-                  <div class="project-metrics">
-                    <div class="metric">
-                      <span class="metric-label">Focus</span>
-                      <span class="metric-value">Product</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- SAGE Project -->
-              <div class="project-card" data-category="ai-ml biotech">
-                <div class="project-image">
-                  <img
-                    src="assets/images/68747470733a2f2f6d656469612e706f73742e72766f6865616c74682e696f2f77702d636f6e74656e742f75706c6f6164732f73697465732f332f323032312f30332f3630393834392d6d656e74616c2d6865616c74682d6875622d31323030783632382d66616365626f6f6b2e6a7067.avif"
-                    alt="AI-Powered Comprehensive Healthcare Support System"
-                    loading="lazy"
-                  />
-                  <div class="project-overlay">
-                    <div class="project-links">
-                      <a
-                        href="https://github.com/NguyenHuy190303/Salus-Analytica.git"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link"
-                        aria-label="View SAGE on GitHub"
-                      >
-                        <span class="link-icon">🔗</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="project-info">
-                  <h3 class="project-title">SAGE</h3>
-                  <p class="project-description">
-                    SAGE is an enterprise-grade, comprehensive AI healthcare system architected to deliver reliable, evidence-based medical information to healthcare professionals, organizations, and patients. The platform ensures medical accuracy by integrating an advanced Retrieval-Augmented Generation (RAG) system that provides scientific citations from authoritative sources like PubMed, the WHO, and the CDC. Built with a scalable microservices architecture, SAGE is fully HIPAA/GDPR compliant, supports multi-modal inputs (text, voice, and images), and is deployed via a production-ready CI/CD pipeline.
-                  </p>
-                  <div class="project-tech">
-                    <span class="tech-tag">AI agent</span>
-                    <span class="tech-tag">Full Stack</span>
-                    <span class="tech-tag">Heathcare</span>
-                  </div>
-                  <div class="project-metrics">
-                    <div class="metric">
-                      <span class="metric-label">Focus</span>
-                      <span class="metric-value">Heathcare</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- DeepGPT-DILI Project -->
-              <div class="project-card" data-category="ai-ml biotech">
-                <div class="project-image">
-                  <img
-                    src="assets/images/DILI.avif"
-                    alt="DeepGPT-DILI Project - Drug-induced liver injury prediction"
-                    loading="lazy"
-                  />
-                  <div class="project-overlay">
-                    <div class="project-links">
-                      <a
-                        href="https://github.com/ongxuanhong/dili-drug-liver-interaction.git"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link"
-                        aria-label="View DeepGPT-DILI on GitHub"
-                      >
-                        <span class="link-icon">🔗</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="project-info">
-                  <h3 class="project-title">DeepGPT-DILI</h3>
-                  <p class="project-description">
-                    Advanced drug-induced liver injury prediction system using
-                    Graph Convolutional Networks (GCN) and Natural Language
-                    Processing. Achieved exceptional performance with AUC:
-                    0.9208, demonstrating the power of AI in pharmaceutical
-                    safety assessment.
-                  </p>
-                  <div class="project-tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Deep Learning</span>
-                    <span class="tech-tag">NLP</span>
-                    <span class="tech-tag">GCN</span>
-                  </div>
-                  <div class="project-metrics">
-                    <div class="metric">
-                      <span class="metric-label">Performance</span>
-                      <span class="metric-value">AUC: 0.9208</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- CRISPRON Project -->
-              <div class="project-card" data-category="ai-ml biotech">
-                <div class="project-image">
-                  <img
-                    src="assets/images/CRISPR-Cas9_mechanism.jpg"
-                    alt="CRISPRON Project - CRISPR/Cas9 repair outcome prediction"
-                    loading="lazy"
-                  />
-                  <div class="project-overlay">
-                    <div class="project-links">
-                      <a
-                        href="https://github.com/UeenHuynh/UeenHuynh/blob/main/Recomb_2025_genetics.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link"
-                        aria-label="View CRISPRON on GitHub"
-                      >
-                        <span class="link-icon">🔗</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="project-info">
-                  <h3 class="project-title">CRISPRON</h3>
-                  <p class="project-description">
-                    Machine learning model for predicting CRISPR/Cas9 repair
-                    outcomes, enabling more precise gene editing applications.
-                    This tool helps researchers optimize their gene editing
-                    strategies and improve success rates.
-                  </p>
-                  <div class="project-tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Machine Learning</span>
-                    <span class="tech-tag">CRISPR</span>
-                    <span class="tech-tag">Bioinformatics</span>
-                  </div>
-                  <div class="project-metrics">
-                    <div class="metric">
-                      <span class="metric-label">Focus</span>
-                      <span class="metric-value">Gene Editing</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Energy Gel Project -->
-              <div class="project-card" data-category="biotech">
-                <div class="project-image">
-                  <img
-                    src="assets/images/Gel.jpeg"
-                    alt="Energy Gel for Athletes Project"
-                    loading="lazy"
-                  />
-                  <div class="project-overlay">
-                    <div class="project-links">
-                      <a
-                        href="https://github.com/username/energy-gel-athletes"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link"
-                        aria-label="View Energy Gel project on GitHub"
-                      >
-                        <span class="link-icon">🔗</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="project-info">
-                  <h3 class="project-title">Energy Gel for Athletes</h3>
-                  <p class="project-description">
-                    Development of advanced energy gel formulations optimized
-                    for athletic performance. Research focused on
-                    bioavailability, sustained energy release, and nutritional
-                    optimization for endurance sports.
-                  </p>
-                  <div class="project-tech">
-                    <span class="tech-tag">Food Science</span>
-                    <span class="tech-tag">Nutrition</span>
-                    <span class="tech-tag">Product Development</span>
-                    <span class="tech-tag">Research</span>
-                  </div>
-                  <div class="project-metrics">
-                    <div class="metric">
-                      <span class="metric-label">Application</span>
-                      <span class="metric-value">Sports Nutrition</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Traffic Sign Detection -->
-              <div class="project-card" data-category="ai-ml">
-                <div class="project-image">
-                  <img
-                    src="assets/images/traffic-detection-systems.jpg"
-                    alt="Traffic Sign Detection Project"
-                    loading="lazy"
-                  />
-                  <div class="project-overlay">
-                    <div class="project-links">
-                      <a
-                        href="https://github.com/UeenHuynh/TrafficSignDetection.git"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link"
-                        aria-label="View Traffic Sign Detection on GitHub"
-                      >
-                        <span class="link-icon">🔗</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="project-info">
-                  <h3 class="project-title">Traffic Sign Detection</h3>
-                  <p class="project-description">
-                    Computer vision system for real-time traffic sign detection
-                    and classification, designed for autonomous vehicle
-                    applications. Implemented using deep learning techniques for
-                    high accuracy and real-time performance.
-                  </p>
-                  <div class="project-tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Computer Vision</span>
-                    <span class="tech-tag">CNN</span>
-                    <span class="tech-tag">OpenCV</span>
-                  </div>
-                  <div class="project-metrics">
-                    <div class="metric">
-                      <span class="metric-label">Domain</span>
-                      <span class="metric-value">Autonomous Systems</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Cardiovascular Prediction -->
-              <div class="project-card" data-category="ai-ml">
-                <div class="project-image">
-                  <img
-                    src="assets/images/d65krw-(1)_d9750aa7-7903-4ed0-936e-70d01b22e08f-5ff882.png"
-                    alt="Cardiovascular Disease Prediction Project"
-                    loading="lazy"
-                  />
-                  <div class="project-overlay">
-                    <div class="project-links">
-                      <a
-                        href="https://github.com/UeenHuynh/CardioVascularPrediction_Stacking.git"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link"
-                        aria-label="View Cardiovascular Prediction on GitHub"
-                      >
-                        <span class="link-icon">🔗</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="project-info">
-                  <h3 class="project-title">
-                    Cardiovascular Disease Prediction
-                  </h3>
-                  <p class="project-description">
-                    Stacking ensemble learning approach for cardiovascular
-                    disease prediction using multiple machine learning
-                    algorithms. Combines the strengths of different models to
-                    achieve superior predictive performance in healthcare
-                    applications.
-                  </p>
-                  <div class="project-tech">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Ensemble Learning</span>
-                    <span class="tech-tag">Healthcare AI</span>
-                    <span class="tech-tag">Stacking</span>
-                  </div>
-                  <div class="project-metrics">
-                    <div class="metric">
-                      <span class="metric-label">Method</span>
-                      <span class="metric-value">Ensemble Learning</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Microbial Genome Analysis -->
-              <div class="project-card" data-category="biotech">
-                <div class="project-image">
-                  <img
-                    src="assets/images/Overview-of-microbiome-analysis-workflow-for-the-purpose-of-determining-causality-and.png"
-                    alt="Microbial Genome Analysis Project"
-                    loading="lazy"
-                  />
-                  <div class="project-overlay">
-                    <div class="project-links">
-                      <a
-                        href="https://github.com/UeenHuynh/MGMA_2024.git"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link"
-                        aria-label="View Microbial Genome Analysis on GitHub"
-                      >
-                        <span class="link-icon">🔗</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="project-info">
-                  <h3 class="project-title">Microbial Genome Analysis</h3>
-                  <p class="project-description">
-                    Comprehensive DNA sequencing and analysis pipeline for
-                    microbial genomes.
-                    Developed bioinformatics tools for genome assembly,
-                    annotation, and comparative genomics.
-                  </p>
-                  <div class="project-tech">
-                    <span class="tech-tag">Bioinformatics</span>
-                    <span class="tech-tag">DNA Sequencing</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Genomics</span>
-                  </div>
-                  <div class="project-metrics">
-                    <div class="metric">
-                      <span class="metric-label">Focus</span>
-                      <span class="metric-value">Microbial Genome Analysis</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Experience Section -->
-      <section
-        id="experience"
-        class="experience-section"
-        role="region"
-        aria-labelledby="experience-heading"
-      >
-        <div class="container">
-          <h2 id="experience-heading" class="section-title">Work Experience</h2>
-          <div class="experience-content">
-            <div class="experience-intro">
-              <p>
-                My professional journey combines education, research, and
-                industry experience, demonstrating versatility across different
-                domains while maintaining focus on biotechnology and AI
-                integration.
-              </p>
-            </div>
-
-            <div class="timeline" role="list" aria-label="Work experience timeline">
-              <!-- Capybara Tech Co-founder -->
-              <article class="timeline-item" role="listitem">
-                <div class="timeline-marker" aria-hidden="true">
-                  <div class="timeline-dot"></div>
-                  <div class="timeline-line"></div>
-                </div>
-                <div class="timeline-content">
-                  <div class="experience-card">
-                    <header class="experience-header">
-                      <div class="experience-title-group">
-                        <h3 class="experience-title">Co-founder</h3>
-                        <div class="experience-company">Capybara Tech</div>
-                      </div>
-                      <div class="experience-meta">
-                        <time class="experience-duration" datetime="2025-07/2025">July 2025 - Present</time>
-                        <div class="experience-location">
-                          Ho Chi Minh City, Vietnam
-                        </div>
-                      </div>
-                    </header>
-                    <div class="experience-description">
-                      <p>
-                        Responsible for co-founding the company and directing its financial strategy. Core responsibilities include financial planning, risk management, investment analysis, and ensuring the company's fiscal integrity and profitability.
-                      </p>
-                      <ul class="experience-responsibilities" role="list">
-                        <li>
-                          Direct financial strategy and planning for the company
-                        </li>
-                        <li>
-                          Manage risk assessment and mitigation strategies
-                        </li>
-                        <li>
-                          Conduct investment analysis and decision-making
-                        </li>
-                        <li>
-                          Ensure fiscal integrity and profitability of operations
-                        </li>
-                        <li>
-                          Lead strategic business development initiatives
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="experience-skills" role="list" aria-label="Skills used in this role">
-                      <span class="skill-badge" role="listitem">Financial Strategy</span>
-                      <span class="skill-badge" role="listitem">Risk Management</span>
-                      <span class="skill-badge" role="listitem">Investment Analysis</span>
-                      <span class="skill-badge" role="listitem">Business Development</span>
-                      <span class="skill-badge" role="listitem">Leadership</span>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Taipei Medical University Mentee -->
-              <article class="timeline-item" role="listitem">
-                <div class="timeline-marker" aria-hidden="true">
-                  <div class="timeline-dot"></div>
-                  <div class="timeline-line"></div>
-                </div>
-                <div class="timeline-content">
-                  <div class="experience-card">
-                    <header class="experience-header">
-                      <div class="experience-title-group">
-                        <h3 class="experience-title">Mentee</h3>
-                        <div class="experience-company">Taipei Medical University</div>
-                      </div>
-                      <div class="experience-meta">
-                        <time class="experience-duration" datetime="2024-07/2024">July 2024 - Present</time>
-                        <div class="experience-location">
-                          Remote
-                        </div>
-                      </div>
-                    </header>
-                    <div class="experience-description">
-                      <p>
-                        Collaborated with mentors to deepen understanding of drug-induced liver injury (DILI) and clinical assessment frameworks such as CRISPR-Cas. Developed and implemented machine learning and deep learning models for natural language processing tasks.
-                      </p>
-                      <ul class="experience-responsibilities" role="list">
-                        <li>
-                          Collaborate with mentors on DILI research and clinical assessment frameworks
-                        </li>
-                        <li>
-                          Develop machine learning models (LSTM, CNN, Transformer-based architectures)
-                        </li>
-                        <li>
-                          Implement deep learning solutions for natural language processing tasks
-                        </li>
-                        <li>
-                          Work on DILI case prediction and classification systems
-                        </li>
-                        <li>
-                          Apply CRISPR-Cas frameworks in clinical research contexts
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="experience-skills" role="list" aria-label="Skills used in this role">
-                      <span class="skill-badge" role="listitem">Machine Learning</span>
-                      <span class="skill-badge" role="listitem">Deep Learning</span>
-                      <span class="skill-badge" role="listitem">NLP</span>
-                      <span class="skill-badge" role="listitem">CRISPR-Cas</span>
-                      <span class="skill-badge" role="listitem">Clinical Research</span>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-              <!-- French Language Tutor -->
-              <article class="timeline-item" role="listitem">
-                <div class="timeline-marker" aria-hidden="true">
-                  <div class="timeline-dot"></div>
-                  <div class="timeline-line"></div>
-                </div>
-                <div class="timeline-content">
-                  <div class="experience-card">
-                    <header class="experience-header">
-                      <div class="experience-title-group">
-                        <h3 class="experience-title">French Language Tutor</h3>
-                        <div class="experience-company">Freelance</div>
-                      </div>
-                      <div class="experience-meta">
-                        <time class="experience-duration" datetime="2022/2024">2022 - Present</time>
-                        <div class="experience-location">
-                          Ho Chi Minh City, Vietnam
-                        </div>
-                      </div>
-                    </header>
-                    <div class="experience-description">
-                      <p>
-                        Help high-school students to enhance communication skills in French. Provide students with weekly progress notes, setting learning objectives and tracking their improvements.
-                      </p>
-                      <ul class="experience-responsibilities" role="list">
-                        <li>
-                          Help high-school students enhance French communication skills
-                        </li>
-                        <li>
-                          Provide students with weekly progress notes and feedback
-                        </li>
-                        <li>
-                          Set learning objectives and track student improvements
-                        </li>
-                        <li>
-                          Develop personalized learning plans for individual students
-                        </li>
-                        <li>
-                          Monitor and assess student progress regularly
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="experience-skills" role="list" aria-label="Skills used in this role">
-                      <span class="skill-badge" role="listitem">French Language</span>
-                      <span class="skill-badge" role="listitem">Education</span>
-                      <span class="skill-badge" role="listitem">Communication</span>
-                      <span class="skill-badge" role="listitem">Progress Tracking</span>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Food Microbiology Lab -->
-              <article class="timeline-item" role="listitem">
-                <div class="timeline-marker" aria-hidden="true">
-                  <div class="timeline-dot"></div>
-                  <div class="timeline-line"></div>
-                </div>
-                <div class="timeline-content">
-                  <div class="experience-card">
-                    <header class="experience-header">
-                      <div class="experience-title-group">
-                        <h3 class="experience-title">Research Assistant</h3>
-                        <div class="experience-company">
-                          Food Microbiology Lab - Nong Lam University Ho Chi Minh City (NLU)
-                        </div>
-                        <div class="experience-advisor">
-                          Advisor: Dr. Cao Thi Thanh Loan
-                        </div>
-                      </div>
-                      <div class="experience-meta">
-                        <time class="experience-duration" datetime="2022/2024">2022 - Present</time>
-                        <div class="experience-location">
-                          Ho Chi Minh City, Vietnam
-                        </div>
-                      </div>
-                    </header>
-                    <div class="experience-description">
-                      <p>
-                        Food microbiology research focuses on studying microorganisms in food to ensure safety, quality, and preservation methods.
-                      </p>
-                      <ul class="experience-responsibilities" role="list">
-                        <li>
-                          Study microorganisms in food systems for safety and quality assurance
-                        </li>
-                        <li>
-                          Research food preservation methods and techniques
-                        </li>
-                        <li>
-                          Conduct microbiological analysis of food samples
-                        </li>
-                        <li>
-                          Develop and implement food safety protocols
-                        </li>
-                        <li>
-                          Collaborate on research projects under faculty supervision
-                        </li>
-                        <li>
-                          Document research findings and maintain laboratory records
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="experience-skills" role="list" aria-label="Skills used in this role">
-                      <span class="skill-badge" role="listitem">Food Microbiology</span>
-                      <span class="skill-badge" role="listitem">Food Safety</span>
-                      <span class="skill-badge" role="listitem">Research Methods</span>
-                      <span class="skill-badge" role="listitem">Laboratory Techniques</span>
-                      <span class="skill-badge" role="listitem">Quality Assurance</span>
-                    </div>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Mat Bao Corporation Internship -->
-              <article class="timeline-item" role="listitem">
-                <div class="timeline-marker" aria-hidden="true">
-                  <div class="timeline-dot"></div>
-                </div>
-                <div class="timeline-content">
-                  <div class="experience-card">
-                    <header class="experience-header">
-                      <div class="experience-title-group">
-                        <h3 class="experience-title">Internship</h3>
-                        <div class="experience-company">
-                          Mat Bao Corporation
-                        </div>
-                      </div>
-                      <div class="experience-meta">
-                        <time class="experience-duration" datetime="2024-07/2024-09">
-                          July 2024 - September 2024
-                        </time>
-                        <div class="experience-location">
-                          Tan Binh, Ho Chi Minh City, Vietnam
-                        </div>
-                      </div>
-                    </header>
-                    <div class="experience-description">
-                      <p>
-                        Managed and published e-invoices, performing thorough checks for accuracy and compliance.
-                      </p>
-                      <ul class="experience-responsibilities" role="list">
-                        <li>
-                          Manage and publish e-invoices with accuracy and compliance
-                        </li>
-                        <li>
-                          Perform thorough checks for invoice accuracy
-                        </li>
-                        <li>
-                          Ensure compliance with regulatory requirements
-                        </li>
-                        <li>
-                          Maintain detailed records of invoice processing
-                        </li>
-                        <li>
-                          Collaborate with accounting and finance teams
-                        </li>
-                        <li>
-                          Support administrative and operational tasks
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="experience-skills" role="list" aria-label="Skills used in this role">
-                      <span class="skill-badge" role="listitem">Invoice Management</span>
-                      <span class="skill-badge" role="listitem">Compliance</span>
-                      <span class="skill-badge" role="listitem">Accuracy Control</span>
-                      <span class="skill-badge" role="listitem">Administrative Skills</span>
-                      <span class="skill-badge" role="listitem">Team Collaboration</span>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section
-        id="contact"
-        class="contact-section"
-        role="region"
-        aria-labelledby="contact-heading"
-      >
-        <div class="container">
-          <h2 id="contact-heading" class="section-title">Get In Touch</h2>
-          <div class="contact-content">
-            <div class="contact-intro">
-              <p>
-                I'm always interested in discussing new opportunities,
-                collaborations, or projects that combine biotechnology with
-                artificial intelligence. Let's connect and explore how we can
-                work together!
-              </p>
-            </div>
-
-            <div class="contact-grid">
-              <!-- Contact Information -->
-              <div class="contact-info">
-                <h3>Contact Information</h3>
-                <div class="contact-details">
-                  <div class="contact-detail-item">
-                    <div class="contact-icon">📧</div>
-                    <div class="contact-detail-content">
-                      <div class="contact-detail-label">Email</div>
-                      <a
-                        href="mailto:uyenhuynhkhoiminh.1.1@gmail.com"
-                        class="contact-detail-value"
-                      >
-                        uyenhuynhkhoiminh.1.1@gmail.com
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="contact-detail-item">
-                    <div class="contact-icon">📱</div>
-                    <div class="contact-detail-content">
-                      <div class="contact-detail-label">Phone</div>
-                      <a href="tel:+84397849278" class="contact-detail-value">
-                        +84 397 849 278
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="contact-detail-item">
-                    <div class="contact-icon">📍</div>
-                    <div class="contact-detail-content">
-                      <div class="contact-detail-label">Location</div>
-                      <div class="contact-detail-value">
-                        Ho Chi Minh City, Vietnam
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="contact-detail-item">
-                    <div class="contact-icon">🎓</div>
-                    <div class="contact-detail-content">
-                      <div class="contact-detail-label">University</div>
-                      <div class="contact-detail-value">
-                        University of Agriculture and Forestry HCMC
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="availability-status">
-                  <div class="status-indicator">
-                    <div class="status-dot available"></div>
-                    <span class="status-text">Available for opportunities</span>
-                  </div>
-                  <div class="status-description">
-                    Open to internships, research collaborations, and full-time
-                    positions in biotechnology and AI.
-                  </div>
-                </div>
-              </div>
-
-              <!-- Contact Form -->
-              <div class="contact-form-container">
-                <h3>Send a Message</h3>
-                <form class="contact-form" id="contactForm" novalidate>
-                  <div class="form-group">
-                    <label for="contactName" class="form-label">
-                      Full Name <span class="required">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="contactName"
-                      name="name"
-                      class="form-input"
-                      required
-                      aria-describedby="nameError"
-                      placeholder="Enter your full name"
-                    />
-                    <div class="form-error" id="nameError" role="alert"></div>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="contactEmail" class="form-label">
-                      Email Address <span class="required">*</span>
-                    </label>
-                    <input
-                      type="email"
-                      id="contactEmail"
-                      name="email"
-                      class="form-input"
-                      required
-                      aria-describedby="emailError"
-                      placeholder="Enter your email address"
-                    />
-                    <div class="form-error" id="emailError" role="alert"></div>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="contactSubject" class="form-label">
-                      Subject
-                    </label>
-                    <input
-                      type="text"
-                      id="contactSubject"
-                      name="subject"
-                      class="form-input"
-                      placeholder="What's this about?"
-                    />
-                  </div>
-
-                  <div class="form-group">
-                    <label for="contactMessage" class="form-label">
-                      Message <span class="required">*</span>
-                    </label>
-                    <textarea
-                      id="contactMessage"
-                      name="message"
-                      class="form-textarea"
-                      rows="6"
-                      required
-                      aria-describedby="messageError"
-                      placeholder="Tell me about your project, opportunity, or how we can collaborate..."
-                    ></textarea>
-                    <div
-                      class="form-error"
-                      id="messageError"
-                      role="alert"
-                    ></div>
-                  </div>
-
-                  <div class="form-group">
-                    <button
-                      type="submit"
-                      class="btn btn-primary form-submit-btn"
-                    >
-                      <span class="btn-text">Send Message</span>
-                      <span class="btn-loading"
-                        >Sending...</span
-                      >
-                    </button>
-                  </div>
-
-                  <div
-                    class="form-success"
-                    id="formSuccess"
-                    role="alert"
-                  >
-                    <div class="success-icon">✅</div>
-                    <div class="success-message">
-                      <strong>Message sent successfully!</strong>
-                      <p>
-                        Thank you for reaching out. I'll get back to you as soon
-                        as possible.
-                      </p>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer" role="contentinfo">
-      <div class="container">
-        <div class="footer-content">
-          <p>&copy; 2024 Uyen Huynh Khoi Minh. All rights reserved.</p>
-          <div class="footer-links">
-            <a href="#home" aria-label="Back to top">Back to Top</a>
+          <div class="hero-image">
+            <img src="assets/images/b80908e2f3a07afe23b1.jpg" alt="Uyen Huynh Khoi Minh - Professional portrait"
+              class="profile-image" />
           </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <!-- JavaScript Files -->
-    <script src="./assets/js/main.js" type="text/javascript"></script>
-  </body>
+    <!-- Engineering Mindset Section -->
+    <section id="about" class="engineering-section" role="region" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="engineering-card">
+          <!-- Glow effect -->
+          <div class="engineering-glow"></div>
+
+          <div class="engineering-inner">
+            <div class="engineering-grid">
+              <!-- Left: Visual -->
+              <div class="engineering-visual">
+                <div class="brain-box">
+                  <div class="brain-pattern"></div>
+                  <div class="brain-icon">🧠</div>
+                  <!-- Mock Code Overlay -->
+                  <div class="code-overlay">
+                    <p>> model.optimize(quantize=True)</p>
+                    <p>> pipeline.deploy(target="production")</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Content -->
+              <div class="engineering-content">
+                <h3 class="engineering-label">
+                  <span class="label-icon">⚙️</span> Engineering Mindset
+                </h3>
+                <h4 class="engineering-title">Bridging the gap between <br>Research & Production.</h4>
+                <p class="engineering-desc">
+                  My mission is to deploy AI models from research labs to production in the most stable way possible.
+                  Focused on automation (CI/CD for ML), observability,
+                  and hardware resource optimization.
+                </p>
+
+                <div class="engineering-stats">
+                  <div class="eng-stat">
+                    <div class="eng-stat-value">99.9%</div>
+                    <div class="eng-stat-label">Uptime for ML APIs</div>
+                  </div>
+                  <div class="eng-stat">
+                    <div class="eng-stat-value">5x</div>
+                    <div class="eng-stat-label">Latency Optimization</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar: Education, Language, Experience -->
+        <div class="info-grid">
+          <div class="info-card">
+            <h4>🎓 Education</h4>
+            <div class="education-item">
+              <div class="education-title">Biotech Engineer</div>
+              <div class="education-institution">Nong Lam University Ho Chi Minh City</div>
+              <div class="education-year">Expected 2025</div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h4>🌐 Languages</h4>
+            <div class="language-list">
+              <div class="lang-item">
+                <span class="lang-name">Vietnamese</span>
+                <span class="lang-level native">Native</span>
+              </div>
+              <div class="lang-item">
+                <span class="lang-name">English</span>
+                <span class="lang-level advanced">TOEIC 700+</span>
+              </div>
+              <div class="lang-item">
+                <span class="lang-name">French</span>
+                <span class="lang-level intermediate">B2 Level</span>
+              </div>
+              <div class="lang-item">
+                <span class="lang-name">Chinese</span>
+                <span class="lang-level intermediate">HSK 3</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h4>💼 Experience</h4>
+            <div class="exp-summary">
+              <div class="exp-item">
+                <span class="exp-years">2+</span>
+                <span class="exp-text">Years AI Research</span>
+              </div>
+              <div class="exp-item">
+                <span class="exp-years">4+</span>
+                <span class="exp-text">Major Publications</span>
+              </div>
+              <div class="exp-item">
+                <span class="exp-years">9+</span>
+                <span class="exp-text">Projects Completed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- System Architecture Section -->
+    <section id="skills" class="system-section" role="region" aria-labelledby="system-heading">
+      <div class="container">
+        <div class="system-header">
+          <div>
+            <h2 id="system-heading" class="section-title">SYSTEM ARCHITECTURE</h2>
+            <p class="system-subtitle">Key Systems & Solutions</p>
+          </div>
+          <div class="system-count">Total: 02 Systems</div>
+        </div>
+
+        <div class="system-grid">
+          <!-- MediAI -->
+          <article class="system-card">
+            <div class="system-glow"></div>
+            <div class="system-icon blue">🏥</div>
+            <span class="system-category">Healthcare AI</span>
+            <h3 class="system-title">MediAI V4</h3>
+            <p class="system-desc">
+              Production-ready MLOps platform for ICU decision support. Microservices engine serving 70,000+ samples
+              with 50ms latency (10x improvement). RAG pipeline with LangChain.
+            </p>
+            <div class="system-footer">
+              <span class="system-status">Production Ready</span>
+              <a href="https://github.com/UeenHuynh/MediAI" target="_blank" rel="noopener" class="system-link">🔗</a>
+            </div>
+          </article>
+
+          <!-- T-DDI -->
+          <article class="system-card highlight">
+            <div class="system-glow"></div>
+            <div class="system-icon green">🧬</div>
+            <span class="system-category">Drug Discovery</span>
+            <h3 class="system-title">T-DDI</h3>
+            <p class="system-desc">
+              Drug-Drug Interaction Prediction using Transformer architecture. Novel approach combining molecular
+              fingerprints with attention mechanisms. Submitted to Nature Communications.
+            </p>
+            <div class="system-footer">
+              <span class="system-status">Under Review</span>
+              <a href="#" class="system-link">📄</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="techstack" class="techstack-section" role="region" aria-labelledby="techstack-heading">
+      <div class="container">
+        <div class="techstack-card">
+          <div class="techstack-header">
+            <h2 id="techstack-heading" class="section-title">THE STACK</h2>
+            <p class="techstack-subtitle">Core Technologies & Tools</p>
+          </div>
+
+          <div class="tech-list">
+            <span class="tech-item">Python</span>
+            <span class="tech-item">PyTorch</span>
+            <span class="tech-item">TensorFlow</span>
+            <span class="tech-item">HuggingFace</span>
+            <span class="tech-item">Scikit-learn</span>
+            <span class="tech-item">XGBoost</span>
+            <span class="tech-item">LightGBM</span>
+            <span class="tech-item">Pandas</span>
+            <span class="tech-item">NumPy</span>
+            <span class="tech-item">LangChain</span>
+            <span class="tech-item">OpenAI API</span>
+            <span class="tech-item">FastAPI</span>
+            <span class="tech-item">Streamlit</span>
+            <span class="tech-item">Docker</span>
+            <span class="tech-item">Redis</span>
+            <span class="tech-item">PostgreSQL</span>
+            <span class="tech-item">Git</span>
+            <span class="tech-item">Linux</span>
+            <span class="tech-item">.NET</span>
+            <span class="tech-item">SQL</span>
+            <span class="tech-item">HTML/CSS</span>
+            <span class="tech-item">JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section" role="region" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading" class="section-title">
+          Projects & Research
+        </h2>
+        <div class="projects-content">
+          <div class="projects-intro">
+            <p>
+              Explore my portfolio of research projects that demonstrate the
+              integration of AI and biotechnology, showcasing innovative
+              solutions for healthcare, agriculture, and scientific discovery.
+            </p>
+          </div>
+
+          <div class="projects-filter">
+            <button type="button" class="filter-btn active" data-filter="all">
+              All Projects
+            </button>
+            <button type="button" class="filter-btn" data-filter="ai-ml">AI & ML</button>
+            <button type="button" class="filter-btn" data-filter="biotech">
+              Biotechnology
+            </button>
+            <button type="button" class="filter-btn" data-filter="web-dev">
+              Web Development
+            </button>
+          </div>
+
+          <div class="projects-grid">
+            <!-- MediAI - ICU Risk Prediction Platform V4 -->
+            <div class="project-card" data-category="ai-ml">
+              <div class="project-image">
+                <img src="assets/images/banner.jpeg" alt="MediAI - ICU Risk Prediction Platform" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://mediai-frontend-five.vercel.app/" target="_blank" rel="noopener noreferrer"
+                      class="project-link" aria-label="View MediAI on GitHub">
+                      <span class="link-icon">🔗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">MediAI V4 🚀</h3>
+                <p class="project-description">
+                  Production-ready MLOps platform for ICU decision support. Microservices engine serving 70,000+ samples
+                  with 50ms latency (10x improvement). RAG pipeline with LangChain, deployed via Docker with CI/CD.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">FastAPI</span>
+                  <span class="tech-tag">LightGBM</span>
+                  <span class="tech-tag">Redis</span>
+                  <span class="tech-tag">LangChain</span>
+                  <span class="tech-tag">Docker</span>
+                </div>
+                <div class="project-metrics">
+                  <div class="metric">
+                    <span class="metric-label">Latency</span>
+                    <span class="metric-value">50ms (10x faster)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- T-DDI: Drug-Drug Interaction Prediction -->
+            <div class="project-card" data-category="ai-ml biotech">
+              <div class="project-image">
+                <img src="assets/images/Sélection_890.png" alt="T-DDI - Drug-Drug Interaction Prediction"
+                  loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://huggingface.co/spaces/projectxddi/tddi_docker" target="_blank"
+                      rel="noopener noreferrer" class="project-link" aria-label="View T-DDI Demo">
+                      <span class="link-icon">🔗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">T-DDI 📄</h3>
+                <p class="project-description">
+                  Ensemble ML/DL for Drug-Drug Interaction using molecular descriptors. Transformer classifying 800k+
+                  pairs with 93.7% accuracy. Custom Focal Loss, SMILES to vector pipeline.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">PyTorch</span>
+                  <span class="tech-tag">TabTransformer</span>
+                  <span class="tech-tag">QSAR</span>
+                  <span class="tech-tag">SMILES</span>
+                </div>
+                <div class="project-metrics">
+                  <div class="metric">
+                    <span class="metric-label">Accuracy</span>
+                    <span class="metric-value">93.7%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Breast Project -->
+            <div class="project-card" data-category="ai-ml biotech">
+              <div class="project-image">
+                <img src="assets/images/Sélection_375.png"
+                  alt="TOWARDS PROACTIVE BREAST CANCER SCREENING: AN AI-BASED Classification MODEL" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://github.com/UeenHuynh/BreastMammo.git" target="_blank" rel="noopener noreferrer"
+                      class="project-link" aria-label="View BreastCNNs on GitHub">
+                      <span class="link-icon">🔗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">BreastCNNs</h3>
+                <p class="project-description">
+                  This project proposes an AI-based classification model for proactive breast cancer screening using
+                  mammography images. The research focuses on developing and comparing deep learning models, enhanced by
+                  an advanced data processing pipeline to improve performance. To ensure clinical trust and
+                  transparency, the model integrates Grad-CAM to visualize the key evidence driving its diagnostic
+                  decisions.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Deep Learning</span>
+                  <span class="tech-tag">Breast</span>
+                  <span class="tech-tag">AI medical</span>
+                  <span class="tech-tag">Mammography</span>
+                </div>
+                <div class="project-metrics">
+                  <div class="metric">
+                    <span class="metric-label">Focus</span>
+                    <span class="metric-value">Lesions Classification</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Capybara Project -->
+            <div class="project-card" data-category="ai-ml biotech">
+              <div class="project-image">
+                <img
+                  src="assets/images/cute-capybara-tangerine-head-cartoon-isolated-style-vector-illustration-cartoon-illustration-capybara-380265934.webp"
+                  alt="CAPYBARA: Cách Mạng Hệ Sinh Thái Học Tập Cộng Đồng" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="assets/files/Capybara - Personalized education.docx - Google Docs.pdf" target="_blank"
+                      rel="noopener noreferrer" class="project-link" aria-label="View Capybara on GitHub">
+                      <span class="link-icon">🔗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Capybara</h3>
+                <p class="project-description">
+                  Capybara is an AI-powered community learning ecosystem designed to revolutionize language education by
+                  moving beyond superficial learning. Its core pedagogical approach is "learning by teaching" (The
+                  Feynman Technique), transforming passive users into confident teachers within a peer-to-peer
+                  framework. The platform leverages advanced AI for semantic analysis, personalized learning paths, and
+                  in-depth feedback to create a more effective and engaging educational experience than traditional
+                  apps.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Product</span>
+                  <span class="tech-tag">Full Stack</span>
+                  <span class="tech-tag">AI agent</span>
+                </div>
+                <div class="project-metrics">
+                  <div class="metric">
+                    <span class="metric-label">Focus</span>
+                    <span class="metric-value">Product</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SAGE Project -->
+            <div class="project-card" data-category="ai-ml biotech">
+              <div class="project-image">
+                <img
+                  src="assets/images/68747470733a2f2f6d656469612e706f73742e72766f6865616c74682e696f2f77702d636f6e74656e742f75706c6f6164732f73697465732f332f323032312f30332f3630393834392d6d656e74616c2d6865616c74682d6875622d31323030783632382d66616365626f6f6b2e6a7067.avif"
+                  alt="AI-Powered Comprehensive Healthcare Support System" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://github.com/NguyenHuy190303/Salus-Analytica.git" target="_blank"
+                      rel="noopener noreferrer" class="project-link" aria-label="View SAGE on GitHub">
+                      <span class="link-icon">🔗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">SAGE</h3>
+                <p class="project-description">
+                  SAGE is an enterprise-grade, comprehensive AI healthcare system architected to deliver reliable,
+                  evidence-based medical information to healthcare professionals, organizations, and patients. The
+                  platform ensures medical accuracy by integrating an advanced Retrieval-Augmented Generation (RAG)
+                  system that provides scientific citations from authoritative sources like PubMed, the WHO, and the
+                  CDC. Built with a scalable microservices architecture, SAGE is fully HIPAA/GDPR compliant, supports
+                  multi-modal inputs (text, voice, and images), and is deployed via a production-ready CI/CD pipeline.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">AI agent</span>
+                  <span class="tech-tag">Full Stack</span>
+                  <span class="tech-tag">Heathcare</span>
+                </div>
+                <div class="project-metrics">
+                  <div class="metric">
+                    <span class="metric-label">Focus</span>
+                    <span class="metric-value">Heathcare</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DeepGPT-DILI Project - MICCAI 2025 -->
+            <div class="project-card" data-category="ai-ml biotech">
+              <div class="project-image">
+                <img src="assets/images/DILI.avif" alt="DeepGPT-DILI Project - Drug-induced liver injury prediction"
+                  loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://github.com/ongxuanhong/dili-drug-liver-interaction.git" target="_blank"
+                      rel="noopener noreferrer" class="project-link" aria-label="View DeepGPT-DILI on GitHub">
+                      <span class="link-icon">🔗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">DeepGPT-DILI 🏆</h3>
+                <p class="project-description">
+                  <strong>Published at MICCAI 2025</strong> - Ensemble Deep Learning framework achieving
+                  State-of-the-Art performance (0.921 AUROC). Engineered robust ensemble voting mechanism combining
+                  Graph Neural Networks (GCN), XGBoost, and Extra Trees. Multi-modal architecture leveraging Graph
+                  Structures for topological analysis and Attention-based RNNs for sequential data processing.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">PyTorch</span>
+                  <span class="tech-tag">GCN</span>
+                  <span class="tech-tag">XGBoost</span>
+                  <span class="tech-tag">Attention-RNN</span>
+                  <span class="tech-tag">Docker</span>
+                </div>
+                <div class="project-metrics">
+                  <div class="metric">
+                    <span class="metric-label">AUROC</span>
+                    <span class="metric-value">0.921 (SOTA)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CRISPRON Project -->
+            <div class="project-card" data-category="ai-ml biotech">
+              <div class="project-image">
+                <img src="assets/images/CRISPR-Cas9_mechanism.jpg"
+                  alt="CRISPRON Project - CRISPR/Cas9 repair outcome prediction" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://github.com/UeenHuynh/UeenHuynh/blob/main/Recomb_2025_genetics.pdf" target="_blank"
+                      rel="noopener noreferrer" class="project-link" aria-label="View CRISPRON on GitHub">
+                      <span class="link-icon">🔗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">CRISPRON</h3>
+                <p class="project-description">
+                  Machine learning model for predicting CRISPR/Cas9 repair
+                  outcomes, enabling more precise gene editing applications.
+                  This tool helps researchers optimize their gene editing
+                  strategies and improve success rates.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Machine Learning</span>
+                  <span class="tech-tag">CRISPR</span>
+                  <span class="tech-tag">Bioinformatics</span>
+                </div>
+                <div class="project-metrics">
+                  <div class="metric">
+                    <span class="metric-label">Focus</span>
+                    <span class="metric-value">Gene Editing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Energy Gel Project -->
+            <div class="project-card" data-category="biotech">
+              <div class="project-image">
+                <img src="assets/images/Gel.jpeg" alt="Energy Gel for Athletes Project" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://github.com/username/energy-gel-athletes" target="_blank" rel="noopener noreferrer"
+                      class="project-link" aria-label="View Energy Gel project on GitHub">
+                      <span class="link-icon">🔗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Energy Gel for Athletes</h3>
+                <p class="project-description">
+                  Development of advanced energy gel formulations optimized
+                  for athletic performance. Research focused on
+                  bioavailability, sustained energy release, and nutritional
+                  optimization for endurance sports.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Food Science</span>
+                  <span class="tech-tag">Nutrition</span>
+                  <span class="tech-tag">Product Development</span>
+                  <span class="tech-tag">Research</span>
+                </div>
+                <div class="project-metrics">
+                  <div class="metric">
+                    <span class="metric-label">Application</span>
+                    <span class="metric-value">Sports Nutrition</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Traffic Sign Detection -->
+            <div class="project-card" data-category="ai-ml">
+              <div class="project-image">
+                <img src="assets/images/traffic-detection-systems.jpg" alt="Traffic Sign Detection Project"
+                  loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://github.com/UeenHuynh/TrafficSignDetection.git" target="_blank"
+                      rel="noopener noreferrer" class="project-link" aria-label="View Traffic Sign Detection on GitHub">
+                      <span class="link-icon">🔗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Traffic Sign Detection</h3>
+                <p class="project-description">
+                  Computer vision system for real-time traffic sign detection
+                  and classification, designed for autonomous vehicle
+                  applications. Implemented using deep learning techniques for
+                  high accuracy and real-time performance.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Computer Vision</span>
+                  <span class="tech-tag">CNN</span>
+                  <span class="tech-tag">OpenCV</span>
+                </div>
+                <div class="project-metrics">
+                  <div class="metric">
+                    <span class="metric-label">Domain</span>
+                    <span class="metric-value">Autonomous Systems</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cardiovascular Prediction -->
+            <div class="project-card" data-category="ai-ml">
+              <div class="project-image">
+                <img src="assets/images/d65krw-(1)_d9750aa7-7903-4ed0-936e-70d01b22e08f-5ff882.png"
+                  alt="Cardiovascular Disease Prediction Project" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://github.com/UeenHuynh/CardioVascularPrediction_Stacking.git" target="_blank"
+                      rel="noopener noreferrer" class="project-link"
+                      aria-label="View Cardiovascular Prediction on GitHub">
+                      <span class="link-icon">🔗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">
+                  Cardiovascular Disease Prediction
+                </h3>
+                <p class="project-description">
+                  Stacking ensemble learning approach for cardiovascular
+                  disease prediction using multiple machine learning
+                  algorithms. Combines the strengths of different models to
+                  achieve superior predictive performance in healthcare
+                  applications.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Ensemble Learning</span>
+                  <span class="tech-tag">Healthcare AI</span>
+                  <span class="tech-tag">Stacking</span>
+                </div>
+                <div class="project-metrics">
+                  <div class="metric">
+                    <span class="metric-label">Method</span>
+                    <span class="metric-value">Ensemble Learning</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Microbial Genome Analysis -->
+            <div class="project-card" data-category="biotech">
+              <div class="project-image">
+                <img
+                  src="assets/images/Overview-of-microbiome-analysis-workflow-for-the-purpose-of-determining-causality-and.png"
+                  alt="Microbial Genome Analysis Project" loading="lazy" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://github.com/UeenHuynh/MGMA_2024.git" target="_blank" rel="noopener noreferrer"
+                      class="project-link" aria-label="View Microbial Genome Analysis on GitHub">
+                      <span class="link-icon">🔗</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Microbial Genome Analysis</h3>
+                <p class="project-description">
+                  Comprehensive DNA sequencing and analysis pipeline for
+                  microbial genomes.
+                  Developed bioinformatics tools for genome assembly,
+                  annotation, and comparative genomics.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Bioinformatics</span>
+                  <span class="tech-tag">DNA Sequencing</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Genomics</span>
+                </div>
+                <div class="project-metrics">
+                  <div class="metric">
+                    <span class="metric-label">Focus</span>
+                    <span class="metric-value">Microbial Genome Analysis</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section section" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title" id="experience-title">Professional Journey</h2>
+          <p class="section-subtitle">
+            Bridging the gap between <strong>Biotechnology</strong> and <strong>Artificial Intelligence</strong> through
+            research and leadership.
+          </p>
+        </header>
+
+        <div class="experience-grid" role="list">
+
+          <!-- Co-founder Capybara Tech -->
+          <article class="exp-card" role="listitem">
+            <div class="exp-card-inner">
+              <div class="exp-badge">Startup</div>
+              <div class="exp-header">
+                <div class="company-logo">
+                  <span class="emoji-icon">🦦</span>
+                </div>
+                <div class="title-group">
+                  <h3 class="role">Co-founder</h3>
+                  <span class="company">Capybara Tech</span>
+                </div>
+              </div>
+
+              <div class="exp-meta">
+                <div class="meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <time>July 2025 - Present</time>
+                </div>
+                <div class="meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Ho Chi Minh City, VN</span>
+                </div>
+              </div>
+
+              <div class="exp-body">
+                <p class="summary">Directing financial strategy and managing risk assessment for a growing tech venture.
+                </p>
+                <ul class="task-list">
+                  <li>Direct financial strategy and planning</li>
+                  <li>Manage risk assessment and mitigation</li>
+                  <li>Lead strategic business development</li>
+                </ul>
+              </div>
+
+              <div class="exp-footer">
+                <div class="skill-tags">
+                  <span>Financial Strategy</span>
+                  <span>Leadership</span>
+                  <span>Business Dev</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- AI Researcher - TMU -->
+          <article class="exp-card highlight" role="listitem">
+            <div class="exp-card-inner">
+              <div class="exp-badge primary">Research</div>
+              <div class="exp-header">
+                <div class="company-logo">
+                  <span class="emoji-icon">🧬</span>
+                </div>
+                <div class="title-group">
+                  <h3 class="role">AI Researcher</h3>
+                  <span class="company">Taipei Medical Univ.</span>
+                </div>
+              </div>
+
+              <div class="exp-meta">
+                <div class="meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <time>May 2024 - Present</time>
+                </div>
+                <div class="meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Taipei City, Taiwan</span>
+                </div>
+              </div>
+
+              <div class="exp-body">
+                <p class="summary">Optimizing GCN and Transformer architectures for medical applications.</p>
+                <ul class="task-list">
+                  <li>Developed DeepGPT-DILI (MICCAI 2025, 0.921 AUROC)</li>
+                  <li>T-DDI submitted to <strong>Nature Communications</strong></li>
+                  <li>Peer Reviewer for <strong>PLOS ONE</strong></li>
+                </ul>
+              </div>
+
+              <div class="exp-footer">
+                <div class="skill-tags">
+                  <span>GCN</span>
+                  <span>Transformer</span>
+                  <span>PyTorch</span>
+                  <span>XGBoost</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- AI Researcher - AI Vietnam -->
+          <article class="exp-card" role="listitem">
+            <div class="exp-card-inner">
+              <div class="exp-badge">Applied AI</div>
+              <div class="exp-header">
+                <div class="company-logo">
+                  <span class="emoji-icon">🤖</span>
+                </div>
+                <div class="title-group">
+                  <h3 class="role">AI Researcher</h3>
+                  <span class="company">AI Vietnam</span>
+                </div>
+              </div>
+
+              <div class="exp-meta">
+                <div class="meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <time>Jan 2023 - May 2024</time>
+                </div>
+                <div class="meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Ho Chi Minh City, VN</span>
+                </div>
+              </div>
+
+              <div class="exp-body">
+                <p class="summary">Focused on LLM Research (VLAI Team) and mathematical reasoning efficiency.</p>
+                <ul class="task-list">
+                  <li>Co-authored Multi-Mode CoT research (2025)</li>
+                  <li>Fine-tuned Llama 3.2 3B (80.06% GSM8K)</li>
+                  <li>Built automated Data Curation Pipeline</li>
+                </ul>
+              </div>
+
+              <div class="exp-footer">
+                <div class="skill-tags">
+                  <span>LLM</span>
+                  <span>Fine-tuning</span>
+                  <span>CoT</span>
+                  <span>LangChain</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Software Dev Intern - Mat Bao -->
+          <article class="exp-card" role="listitem">
+            <div class="exp-card-inner">
+              <div class="exp-badge">Internship</div>
+              <div class="exp-header">
+                <div class="company-logo">
+                  <span class="emoji-icon">💻</span>
+                </div>
+                <div class="title-group">
+                  <h3 class="role">Software Dev Intern</h3>
+                  <span class="company">Mat Bao Corp.</span>
+                </div>
+              </div>
+
+              <div class="exp-meta">
+                <div class="meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <time>Jul - Sep 2024</time>
+                </div>
+                <div class="meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Ho Chi Minh City, VN</span>
+                </div>
+              </div>
+
+              <div class="exp-body">
+                <p class="summary">Developed and maintained web applications ensuring optimal performance.</p>
+                <ul class="task-list">
+                  <li>Backend development with .NET framework</li>
+                  <li>SQL database management and optimization</li>
+                </ul>
+              </div>
+
+              <div class="exp-footer">
+                <div class="skill-tags">
+                  <span>.NET</span>
+                  <span>SQL</span>
+                  <span>Web Dev</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section" role="region" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading" class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-intro">
+            <p>
+              I'm always interested in discussing new opportunities,
+              collaborations, or projects that combine biotechnology with
+              artificial intelligence. Let's connect and explore how we can
+              work together!
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Contact Information -->
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <div class="contact-details">
+                <div class="contact-detail-item">
+                  <div class="contact-icon">📧</div>
+                  <div class="contact-detail-content">
+                    <div class="contact-detail-label">Email</div>
+                    <a href="mailto:uyenhuynhkhoiminh.1.1@gmail.com" class="contact-detail-value">
+                      uyenhuynhkhoiminh.1.1@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <div class="contact-icon">📱</div>
+                  <div class="contact-detail-content">
+                    <div class="contact-detail-label">Phone</div>
+                    <a href="tel:+84397849278" class="contact-detail-value">
+                      +84 397 849 278
+                    </a>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <div class="contact-icon">📍</div>
+                  <div class="contact-detail-content">
+                    <div class="contact-detail-label">Location</div>
+                    <div class="contact-detail-value">
+                      Ho Chi Minh City, Vietnam
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <div class="contact-icon">🎓</div>
+                  <div class="contact-detail-content">
+                    <div class="contact-detail-label">University</div>
+                    <div class="contact-detail-value">
+                      University of Agriculture and Forestry HCMC
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="availability-status">
+                <div class="status-indicator">
+                  <div class="status-dot available"></div>
+                  <span class="status-text">Available for opportunities</span>
+                </div>
+                <div class="status-description">
+                  Open to internships, research collaborations, and full-time
+                  positions in biotechnology and AI.
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+              <h3>Send a Message</h3>
+              <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-group">
+                  <label for="contactName" class="form-label">
+                    Full Name <span class="required">*</span>
+                  </label>
+                  <input type="text" id="contactName" name="name" class="form-input" required
+                    aria-describedby="nameError" placeholder="Enter your full name" />
+                  <div class="form-error" id="nameError" role="alert"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">
+                    Email Address <span class="required">*</span>
+                  </label>
+                  <input type="email" id="contactEmail" name="email" class="form-input" required
+                    aria-describedby="emailError" placeholder="Enter your email address" />
+                  <div class="form-error" id="emailError" role="alert"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactSubject" class="form-label">
+                    Subject
+                  </label>
+                  <input type="text" id="contactSubject" name="subject" class="form-input"
+                    placeholder="What's this about?" />
+                </div>
+
+                <div class="form-group">
+                  <label for="contactMessage" class="form-label">
+                    Message <span class="required">*</span>
+                  </label>
+                  <textarea id="contactMessage" name="message" class="form-textarea" rows="6" required
+                    aria-describedby="messageError"
+                    placeholder="Tell me about your project, opportunity, or how we can collaborate..."></textarea>
+                  <div class="form-error" id="messageError" role="alert"></div>
+                </div>
+
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary form-submit-btn">
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-loading">Sending...</span>
+                  </button>
+                </div>
+
+                <div class="form-success" id="formSuccess" role="alert">
+                  <div class="success-icon">✅</div>
+                  <div class="success-message">
+                    <strong>Message sent successfully!</strong>
+                    <p>
+                      Thank you for reaching out. I'll get back to you as soon
+                      as possible.
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2024 Uyen Huynh Khoi Minh. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#home" aria-label="Back to top">Back to Top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="./assets/js/main.js" type="text/javascript"></script>
+</body>
+
 </html>
